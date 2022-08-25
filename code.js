@@ -115,8 +115,17 @@ function alternarColorTema() {
     body.classList.toggle('dark');
 }
 
-cambiarTema();
+  cambiarTema();
 }
 
 /* --------------------- PUNTO 5: Escribe tu codigo aqui --------------------- */
+function visibilizar() {
+  const parrafo = document.getElementById('sobre-mi');
+  parrafo.style.visibility = 'visible';
+}
 
+window.addEventListener('keypress', function(e) {
+  if (e.key == 'f' | e.key == 'F') {
+      visibilizar();
+  }
+})
